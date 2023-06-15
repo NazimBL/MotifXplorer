@@ -5,6 +5,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from xgboost import XGBClassifier
 import pandas as pd
 
+#variable array: 3,4,5,6,7,8,9,10
 kmer_size=6
 # function to convert sequence strings into k-mer words, default size = 6 (hexamer words)
 def getKmers(sequence, size):
