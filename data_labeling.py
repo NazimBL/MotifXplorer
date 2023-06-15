@@ -25,14 +25,14 @@ def create_csv(bed_file, output_csv):
 
     with open(output_csv, 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Sequence', 'Label'])
+        writer.writerow(['sequence', 'label'])
         writer.writerows(zip(sequences, labels))
 
     print(f"CSV file created: {output_csv}")
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print("Usage: python create_csv.py <bed_file> <output_csv>")
+        print("Usage: python data_labeling.py <bed_file> <output_csv>")
         sys.exit(1)
 
     bed_file = sys.argv[1]
