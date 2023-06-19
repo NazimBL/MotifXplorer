@@ -40,7 +40,7 @@ def write_output(bed_file, output_lines):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print("Usage: python extract_sequences.py <bed_file> <reference_genome>")
+        print("Usage: python bedSeqExtractor.py <bed_file> <reference_genome>")
         sys.exit(1)
 
     bed_file = sys.argv[1]
