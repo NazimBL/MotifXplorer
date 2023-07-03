@@ -16,3 +16,22 @@ By providing an intuitive interface and leveraging machine learning techniques, 
 
 Get started with genomic peak analysis today and unlock the hidden patterns within your ChIP-seq data using the Genomic Peak Analysis Web Tool!
 
+****************************************************************************************************************************************************************************
+Documentation:
+1.Analyses Steps:
+-Select genome (hg19, hg38, mm9, etc).
+-Use a bed file as a positive case input.
+-Either users bring their own negative example bed file or this webtool automatically design negative examples by taking genomic regions randomly based on the positive bed file uploaded to the web platform.
+-Select motif(k-mer) size (from 4 to 10). 
+
+2.Feature Importance:
+Weight Importance: It is based on the number of times a feature appears in the trees of the model. The higher the number of times a feature is used to make splits across all trees, the more important it is considered.
+
+Cover Importance: It is calculated by summing up the average coverage of each feature across all trees. Coverage represents the average number of samples affected by the splits using a particular feature. Features with higher coverage are considered more important.
+
+Gain Importance: It measures the average gain (or improvement in the model's loss function) obtained from splits on a particular feature. Gain importance provides insights into the contribution of each feature to the model's performance improvement.
+
+Total Gain Importance: It is similar to gain importance but takes into account the total gain across all splits using a particular feature. Total gain importance provides a cumulative measure of the contribution of a feature to the model.
+
+Total Cover Importance: Similar to cover importance, total cover importance considers the cumulative coverage across all splits using a feature. It provides an overall measure of the impact of a feature on the model's coverage.
+
