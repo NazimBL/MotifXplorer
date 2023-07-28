@@ -60,5 +60,8 @@ for i, feature_name in enumerate(feature_names):
 # Create the graph from the modified DOT data
 graph = graphviz.Source(dot_data)
 
+# Save the graph as an image file (e.g., PNG format)
+graph.render(filename='importance_tree', format='png')
+
 # Display the graph
 graph.view()
