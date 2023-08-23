@@ -2,7 +2,7 @@
 Genomic Peak Analysis Web Tool
 
 Description:
-The Genomic Peak Analysis Web Tool is a user-friendly platform designed for non-machine learning professionals to analyze ChIP-seq peaks and gain insights into DNA sequences associated with those peaks. This web tool provides a seamless experience for researchers working with genomic data, enabling them to perform XGBoost analysis and discover significant DNA sequences.
+MotifXplorer is a user-friendly platform designed for non-machine learning professionals to analyze ChIP-seq peaks and gain insights into DNA sequences associated with those peaks. This web tool provides a seamless experience for researchers working with genomic data, enabling them to perform XGBoost analysis and discover significant DNA sequences.
 
 Features:
 1. Genome Selection: Choose from a variety of reference genomes, including hg19, hg38, mm9, and more.
